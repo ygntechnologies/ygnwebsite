@@ -2296,7 +2296,7 @@ input.main-search-input::placeholder {
 
 .logo {
   display: block;
-  width: 330px;
+  width: 285px;
 }
 @media(max-width:768px){
     .logo{
