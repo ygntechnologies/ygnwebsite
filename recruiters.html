@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGN Technologies Private Limited</title>
+    <!-- Favicon img -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- Bootstarp min css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Mean menu css -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- All min css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Swiper bundle min css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Magnigic popup css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Nice select css -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e7c887b20f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Preloader area start -->
+    <div class="loading">
+        <span class="text-capitalize">L</span>
+        <span>o</span>
+        <span>a</span>
+        <span>d</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+    </div>
+    <div id="preloader">
+    </div>
+    <!-- Preloader area end -->
+
+    <!-- Mouse cursor area start here -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- Mouse cursor area end here -->
+
+    <!-- Header area start here -->
+    <header class="header-area">
+      <div class="container header__container">
+        <div class="header__main">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo/logo-light.png" alt="logo" />
+          </a>
+          <div class="main-menu">
+            <nav>
+              <ul>
+                <li class="has-megamenu">
+                  <a href="index.html">Home</a>
+                </li>
+                <li><a href="recruiters.html">For Recruiters</a></li>
+                <li>
+                  <a href="candidates.html">For Candidates</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-none d-lg-inline-block">
+            <a href="contact.html" class="btn-one">Contact <i class="fa-solid fa-headset"></i></a>
+          </div>
+          <div class="bars d-block d-lg-none">
+            <i id="openButton" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end here -->
+
+    <!-- Sidebar area start here -->
+    <div id="targetElement" class="sidebar-area sidebar__hide">
+      <div class="sidebar__overlay"></div>
+      <a href="index.html" class="logo mb-40">
+        <img src="assets/images/logo/logo.svg" alt="logo" />
+      </a>
+      <div class="mobile-menu overflow-hidden"></div>
+      <ul class="footer-contact" style="color:white; ">
+        <li>
+          <div class="info" style="display: flex; gap: 10px;">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <a class="link-body"
+              href="https://www.google.com/maps?ll=22.999317,72.501567&z=17&t=m&hl=en&gl=BD&mapclient=embed&q=PALLADIUM+TOWER+Makarba+Ahmedabad,+Gujarat+380015"
+              target="_blank" style="color:white;">
+              B2 1307, Goyal palladium tower, near Vodafone house,
+              Makarba, Ahmedabad, 380051
+            </a>
+          </div>
+        </li>
+         <!-- <li>
+        <div class="info" style="display: flex; gap: 10px;">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <a class="link-body" href="https://g.co/kgs/79JeyjH" target="_blank">
+            7901 4th ST N STE 300, St. Petersburg, FL, USA, 33702
+          </a>
+        </div>
+      </li> -->
+        <li>
+          <div class="info" style="display: flex; gap: 10px; align-items: center;">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@ygntechnologies.com" class="link-body" style="color:white;">info@ygntechnologies.com</a>
+          </div>
+        </li>
+        <li>
+          <div class="info" style="display: flex; gap: 10px; align-items: center;">
+            <i class="fa-solid fa-phone"></i>
+            <a class="line_effect" href="tel:+14844815566" style="color:white;"> +1 484 481 5566</a>
+          </div>
+        </li>
+      </ul>
+      <div class="social-icon mt-20">
+        <a href="https://www.facebook.com/people/YGN-Technologies/61553317140249/?mibextid=qi2Omg"
+        target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ygntechnologies/?igsh=MWh3cmNrNzN2Zmg5aA%3D%3D" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/ygn-technologies/" target="_blank"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://wa.me/+918209973826" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <button id="closeButton" class="text-white">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <!-- Sidebar area end here -->
+
+    <!-- Fullscreen search area start here -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Fullscreen search area end here -->
+
+    <main>
+        <!-- Page banner area start here -->
+        <section class="banner__inner-page bg-image pt-180 pb-180 bg-image"
+            data-background="assets/images/banner/banner-inner-page.jpg">
+            <div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                <img src="assets/images/banner/inner-banner-shape2.png" alt="shape">
+            </div>
+            <div class="shape1 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <img src="assets/images/banner/inner-banner-shape1.png" alt="shape">
+            </div>
+            <div class="shape3 wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <img class="sway__animationX" src="assets/images/banner/inner-banner-shape3.png" alt="shape">
+            </div>
+            <div class="container">
+                <div
+                  class="breadcrumb-list wow fadeInUp"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <h2
+                    style="
+                      color: white;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                  RPO SERVICES
+                  </h2>
+                  <h4 style="color: white; text-align: center">
+                    With a comprehensive strategy that enhances organizational objectives and recruiting results, take charge of your permanent workforce strategy.
+                  </h4>
+                </div>
+              </div>
+        </section>
+        <!-- Page banner area end here -->
+
+        <!-- About area start here -->
+        <section class="about-area sub-bg pt-120">
+            <div class="about__shape wow slideInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+                <img src="assets/images/shape/about-line.png" alt="shape">
+            </div>
+            <div class="container">
+                <div class="row g-4">
+                    <div
+                    class="col-xl-6 wow fadeInRight"
+                    data-wow-delay="200ms"
+                    data-wow-duration="1500ms"
+                  >
+                    <div class="about-two__left-item">
+                      <div>
+                        <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                          <img class="me-1" src="assets/images/icon/section-title.png" alt="icon" />
+                          WHAT WE DO?
+                        </h5>
+                      </div>
+                      <h2 style="margin: 10px">
+                        We offer comprehensive
+                      </h2>
+                      <p style="margin: 10px">
+                        Organizations must be able to pivot to changes in skills, resources and demand over time without slowing delivery or impacting quality. Recruitment process outsourcing (RPO) – the partial or full outsourcing of a company’s recruitment function – offers a path forward.
+                      </p>
+                      <p style="margin: 10px">
+                        Partner with YGN Solution LLC, and we’ll help you address the differences in hiring needs and recruiting channels for each skill, role and location. And we track and measure success from start to finish, from improving visibility into the workforce to achieving diversity, equity and inclusion (DEI) goals.
+                      </p>
+                      <div
+                        class="about__info mt-50 wow fadeInDown"
+                        data-wow-delay="400ms"
+                        data-wow-duration="1500ms"
+                      >
+                        <a href="contact.html" class="btn-one" style="margin: 10px"
+                          >More Details</a
+                        >
+                      </div>
+                  </div>
+              </div>
+                    <div class="col-xl-6">
+                        <div class="row g-4 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="col-md-6">
+                                <div class="about__right-item" style="padding: 15px 20px; flex-direction: column; align-items: baseline; background-color: #FEF3E4;">
+                                    <div class="icon" style="display: flex; align-items: center; justify-content: center;">
+                                      <i class="fa-solid fa-headset" style="font-size: 34px; color: #3c72fc ;"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mb-1">24/7 Support</h4>
+                                        <p>We provide 24 hours support to all our clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__right-item" style="padding: 15px 20px; flex-direction: column; align-items: baseline; background-color: #FAE6E7;">
+                                    <div class="icon" style="display: flex; align-items: center; justify-content: center;">
+                                        <i class="fa-solid fa-shield-halved" style="font-size: 34px; color: #3c72fc ;"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mb-1">Security</h4>
+                                        <p>We provide 3 month replacement period if it doesn't work out</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__right-item" style="padding: 15px 20px; flex-direction: column; align-items: baseline; background-color: #EAF3EF;">
+                                    <div class="icon" style="display: flex; align-items: center; justify-content: center;">
+                                      <i class="fa-solid fa-cloud-arrow-up" style="font-size: 34px; color: #3c72fc ;"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mb-1">Daily Updates</h4>
+                                        <p>Constant updates from our agents so that you are updated at every step.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about__right-item" style="padding: 15px 20px; flex-direction: column; align-items: baseline; background-color: #E0E9FA;">
+                                    <div class="icon" style="display: flex; align-items: center; justify-content: center;">
+                                      <i class="fa-solid fa-magnifying-glass-chart" style="font-size: 34px; color: #3c72fc ;"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="mb-1">Market Research</h4>
+                                        <p>Get more qualified & vetted candidates. A guarantee by YGN Solution LLC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About area end here -->
+
+        <!-- Team area start here -->
+        <section class="team-area pt-120 pb-120">
+            <div class="container">
+                <div class="section-header text-center mb-60">
+                    <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                      <img class="me-1" src="assets/images/icon/section-title.png" alt="icon" />
+                      OUR PROCESS
+                    </h5>
+                    <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">How we get you the best candidates,<br />
+                        qualified & vetted by YGN Technologies</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms"
+                        data-wow-duration="1500ms">
+                            <div class="box__icon" style='width: 50px;'>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321.7 409.6"><path class="lineal-fill" d="M160.9 221.3c-19.1 0-37.4-7.3-51.3-20.4l51.3 127.2 51.3-127.2c-13.9 13.1-32.3 20.4-51.3 20.4z"></path><path class="lineal-stroke" d="M160.9 339.9c-4.8 0-9.1-2.9-10.9-7.4L98.6 205.3c-2.5-6 .3-12.9 6.3-15.4 4.3-1.8 9.3-.9 12.7 2.4 24.3 22.9 62.2 22.9 86.5 0 4.7-4.5 12.1-4.3 16.6.3 3.2 3.4 4.2 8.3 2.4 12.7l-51.4 127.2c-1.7 4.5-6 7.4-10.8 7.4zm-27.5-111.3l27.5 68.1 27.5-68.1c-17.9 5.9-37.2 5.9-55 0z"></path><path class="lineal-stroke" d="M86.7 316.1c-5.9 0-10.9-4.4-11.7-10.2-2.2-16.6-9.8-23.9-22.3-36.1l-2.9-2.8C28.8 246.5 0 218.4 0 151.6c0-42.9 17.1-81.9 48-110C77.7 14.8 117.7 0 160.9 0s83.2 14.8 112.8 41.6c6.7 6.1 12.8 12.7 18.3 19.9 3.1 4.1 6 8.3 8.6 12.6 1.3 2.2 2.6 4.4 3.8 6.6 2.4 4.5 4.6 9.1 6.5 13.8 1.4 3.5 2.7 7.2 3.9 10.8 4.7 14.9 7 30.5 7 46.2 0 27.9-4.9 51.2-15 71.2-.6 1.2-1.2 2.4-1.8 3.5-1.8 3.3-3.8 6.5-5.9 9.6-.7 1-1.4 2-2 3-2.6 3.6-5.3 7.1-8.5 10.7-5.6 6.5-11.5 12.2-16.6 17.2-4.7 4.5-12.1 4.4-16.6-.2-4.5-4.7-4.4-12.1.2-16.6 5-4.9 10.2-9.9 15.2-15.7 2.6-3 4.9-6 7.1-9 .6-.8 1.1-1.6 1.7-2.4 1.7-2.5 3.3-5.2 4.7-7.8.5-.9 1-1.9 1.5-2.8 8.4-16.6 12.5-36.4 12.5-60.6 0-13.2-2-26.4-5.9-39.1-1-3.1-2.1-6.1-3.3-9.1-1.6-3.9-3.4-7.8-5.4-11.6-1-1.9-2.1-3.8-3.2-5.6-6.2-10.2-13.8-19.4-22.6-27.3-25.3-22.9-59.8-35.5-97-35.5S89.1 36.1 63.8 59c-26 23.5-40.3 56.4-40.3 92.5 0 56.9 22.7 79.1 42.8 98.6l2.8 2.7c13.4 13 26.1 25.2 29.3 49.9.9 6.4-3.7 12.4-10.1 13.2-.6.2-1.1.2-1.6.2z"></path><path class="lineal-fill" d="M141.9 397.8h38c3.8 0 7.4-1.5 10.1-4.2l13-13c2-2 3.4-4.6 3.9-7.4l12.4-63.7h-117l12.4 63.7c.6 2.8 2 5.4 4 7.4l13 13c2.7 2.7 6.3 4.2 10.2 4.2z"></path><path class="lineal-stroke" d="M179.8 409.6h-37.9c-6.9 0-13.6-2.7-18.5-7.7l-13-13c-3.7-3.7-6.2-8.4-7.2-13.5l-12.4-63.7c-1.2-6.4 2.9-12.5 9.3-13.8.7-.1 1.5-.2 2.2-.2h117c6.5 0 11.8 5.3 11.8 11.8 0 .8-.1 1.5-.2 2.2l-12.4 63.7c-1 5.1-3.5 9.8-7.2 13.5l-13 13c-4.8 4.9-11.5 7.7-18.5 7.7zm-63.2-88.4l9.7 49.7c.1.5.4 1 .7 1.4l13 13c.5.5 1.2.8 1.9.8h38c.7 0 1.4-.3 1.9-.8l13-13c.4-.4.6-.9.7-1.4l9.6-49.7h-88.5z"></path><path class="lineal-stroke" d="M241.5 321H80.2c-6.5-.2-11.6-5.6-11.4-12.1.2-6.2 5.2-11.2 11.4-11.4h161.4c6.5-.2 11.9 4.9 12.1 11.4.2 6.5-4.9 11.9-11.4 12.1h-.8zm-14.8 44.3H95c-6.5-.2-11.6-5.6-11.4-12.1.2-6.2 5.2-11.2 11.4-11.4h131.7c6.5.2 11.6 5.6 11.4 12.1-.2 6.2-5.2 11.2-11.4 11.4z"></path></svg>	        
+                            </div>
+                            <div class="ot-icon-box__content" style="margin: 10px 0px">
+                                <h4 class="icon-box-title">1. Requirement</h4>				
+                                <div class="icon-box-des">You provide us your requirements &amp; qualifications </div>	
+                            </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div class="box__icon" style='width: 50px;'>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 427.5"><path class="lineal-fill" d="M186.9 353.4h138.3V413H186.9z"></path><path class="lineal-stroke" d="M460.2 0H51.8C23.2 0 0 23.2 0 51.7v264.4c0 28.6 23.2 51.7 51.8 51.8h120.6v30.7h-28.8c-8 0-14.5 6.5-14.5 14.5s6.5 14.5 14.5 14.5h224.9c8 0 14.5-6.5 14.5-14.5s-6.5-14.5-14.5-14.5h-28.8v-41.9c.3-1.2.4-2.4.4-3.6-.2-8-6.9-14.3-14.8-14.1H51.8C39.2 339 29 328.8 29 316.2V51.7c0-12.6 10.2-22.8 22.8-22.8h408.5c12.6 0 22.8 10.2 22.8 22.8v264.4c0 12.6-10.2 22.8-22.8 22.8h-46.7c-8 .2-14.3 6.9-14.1 14.8.2 8 6.9 14.3 14.8 14.1h45.9c28.6 0 51.7-23.2 51.8-51.7V51.7C512 23.2 488.8 0 460.2 0zM310.7 367.9v30.7H201.3v-30.7h109.4z"></path><path class="lineal-fill" d="M220.1 271.6c-12.7-19.8-6.9-46.3 12.9-59s46.3-6.9 59 12.9c9 14 9 32 0 46.1h100.6v-50.3l-30.4-4.9c-4.9-16.3-13.6-31.3-25.3-43.7l11-28.7-47.3-27.3-19.4 23.8c-16.6-3.9-33.9-3.9-50.5 0l-19.4-23.8-47.2 27.3 11 28.7c-11.7 12.4-20.3 27.4-25.3 43.7l-30.3 4.9v50.3h100.6z"></path><path class="lineal-stroke" d="M392.5 286.1H291.9c-8 0-14.5-6.5-14.5-14.5 0-2.8.8-5.5 2.3-7.8 8.4-13.1 4.6-30.6-8.6-39-13.1-8.4-30.6-4.6-39 8.6-5.9 9.3-5.9 21.1 0 30.4 4.3 6.7 2.4 15.7-4.3 20-2.3 1.5-5.1 2.3-7.8 2.3H119.4c-8 0-14.5-6.5-14.4-14.5v-50.3c0-7.1 5.2-13.1 12.2-14.3l21.8-3.5c4.7-12.2 11.3-23.6 19.5-33.7l-7.9-20.6c-2.5-6.6.1-14.1 6.3-17.7l47.3-27.3c6.2-3.5 14-2.1 18.5 3.4l13.9 17.1c12.9-2 26.1-2 39 0l13.9-17.1c4.5-5.5 12.3-7 18.5-3.4l47.3 27.3c6.2 3.6 8.8 11.1 6.3 17.7l-7.9 20.6c8.2 10.2 14.7 21.5 19.4 33.7l21.8 3.5c7 1.1 12.2 7.2 12.2 14.3v50.3c-.1 8-6.6 14.5-14.6 14.5zm-80-29h65.6v-23.5l-18.2-2.9c-5.5-.9-10-4.8-11.6-10.1-4.3-14.2-11.9-27.2-22-38-3.8-4-5-9.9-3-15.1l6.6-17.2-25.9-15-11.6 14.3c-3.5 4.3-9.1 6.2-14.5 5-14.5-3.3-29.5-3.3-43.9 0-5.4 1.2-11-.7-14.5-5l-11.6-14.3-25.9 15 6.6 17.2c2 5.2.8 11-3 15.1-10.1 10.8-17.7 23.8-22 38-1.6 5.3-6.1 9.2-11.6 10.1l-18.2 2.9v23.5h65.6c-.4-2.8-.6-5.7-.6-8.6.4-31.6 26.3-56.8 57.9-56.4 31 .4 56 25.4 56.4 56.4 0 2.9-.2 5.8-.6 8.6z"></path></svg>	        
+                        </div>
+                        <div class="ot-icon-box__content" style="margin: 10px 0px">
+                            <h4 class="icon-box-title">2. Search</h4>			
+                            	<div class="icon-box-des">We take interviews in our talent pool &amp; filter out the best candidates</div>						
+                            	</div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms"
+                        data-wow-duration="1500ms">
+                        <div class="box__icon" style="width: 50px;" >
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.6 332.7"><path class="lineal-stroke" d="M350.9 54.2H58.7c-6.2.2-11.4-4.7-11.5-10.9S51.8 31.9 58 31.7h292.9c6.2-.2 11.4 4.7 11.5 10.9s-4.7 11.4-10.9 11.5c-.2.1-.4.1-.6.1zM239.8 328.9a11.182 11.182 0 01-10.6-14.8c2.8-8.3 16.2-47.4 25.6-63.6-9.5-10.1-37-40.3-49.9-66.1-12.1 23.4-39.5 54.4-50.1 66 10.1 16.5 22.7 54.9 25.4 63.6.4 1.2.6 2.4.6 3.7 0 6.2-5 11.2-11.2 11.2-4.9 0-9.3-3.2-10.7-7.9v-.1c-6.6-20.7-18.4-52.9-24.3-60.3-4.8-6.1-3.4-14.5-.8-19.8.5-.9 1.1-1.8 1.8-2.6 20.6-22.3 50.7-59.4 52.7-72.4.6-3.7 3.3-10.1 14.8-10.7 12.5-.7 16.6 4.8 17.8 9.4 5.7 21.5 40 60.3 52.7 73.4.8.8 1.5 1.8 2 2.8 2.6 5.1 4 13.3-.5 19.5-5.7 7.7-18.2 41.6-24.8 61.1-1.3 4.6-5.6 7.7-10.5 7.6z"></path><path class="lineal-stroke" d="M204.8 254.9c-6.2 0-11.2-5-11.2-11.2V167c.3-6.2 5.6-10.9 11.8-10.6 5.7.3 10.3 4.9 10.6 10.6v76.7c0 6.2-5 11.2-11.2 11.2z"></path><path class="lineal-stroke" d="M366.6 244.6c-6.2 0-11.2-5-11.2-11.2v-28.6c0-83.1-67.6-150.6-150.6-150.6S54.2 121.7 54.2 204.8v28.6c-.2 6.2-5.4 11.1-11.5 10.9-5.9-.2-10.7-4.9-10.9-10.9v-28.6c-.1-95.5 77.2-172.9 172.7-173 46 0 90.1 18.2 122.6 50.8 32.6 32.3 50.9 76.3 50.9 122.2v28.6c-.1 6.2-5.2 11.2-11.4 11.2z"></path><path class="lineal-fill" d="M220 74.7h-30.4c-9.1 0-16.5-7.4-16.5-16.5V27.7c0-9.1 7.4-16.5 16.5-16.5H220c9.1 0 16.5 7.4 16.5 16.5v30.5c0 9.1-7.4 16.5-16.5 16.5z"></path><path class="lineal-stroke" d="M220 85.9h-30.4c-15.3 0-27.7-12.4-27.7-27.7V27.7c0-15.3 12.4-27.7 27.7-27.7H220c15.3 0 27.7 12.4 27.7 27.7v30.5c0 15.3-12.4 27.7-27.7 27.7zm-30.4-63.5c-2.9 0-5.3 2.4-5.3 5.3v30.5c0 2.9 2.4 5.3 5.3 5.3H220c2.9 0 5.3-2.4 5.3-5.3V27.7c0-2.9-2.4-5.3-5.3-5.3h-30.4z"></path><path class="lineal-fill" d="M381.9 275.4h-30.5c-9.1 0-16.5-7.4-16.5-16.5v-30.5c0-9.1 7.4-16.5 16.5-16.5h30.5c9.1 0 16.5 7.4 16.5 16.5v30.5c0 9.1-7.4 16.5-16.5 16.5z"></path><path class="lineal-stroke" d="M381.9 286.6h-30.5c-15.3 0-27.7-12.4-27.7-27.7v-30.5c0-15.3 12.4-27.7 27.7-27.7h30.5c15.3 0 27.7 12.4 27.7 27.7v30.5c0 15.3-12.4 27.7-27.7 27.7zm-30.5-63.4c-2.9 0-5.3 2.4-5.3 5.3V259c0 2.9 2.4 5.3 5.3 5.3h30.5c2.9 0 5.3-2.4 5.3-5.3v-30.5c0-2.9-2.4-5.3-5.3-5.3h-30.5z"></path><path class="lineal-fill" d="M58.2 275.4H27.7c-9.1 0-16.5-7.4-16.5-16.5v-30.5c0-9.1 7.4-16.5 16.5-16.5h30.5c9.1 0 16.5 7.4 16.5 16.5V259c0 9.1-7.4 16.5-16.5 16.4z"></path><path class="lineal-stroke" d="M58.2 286.6H27.7C12.4 286.6 0 274.2 0 258.9v-30.5c0-15.3 12.4-27.7 27.7-27.7h30.5c15.3 0 27.7 12.4 27.7 27.7v30.5c0 15.3-12.4 27.7-27.7 27.7zm-30.5-63.4c-2.9 0-5.3 2.4-5.3 5.3V259c0 2.9 2.4 5.3 5.3 5.3h30.5c2.9 0 5.3-2.4 5.3-5.3v-30.5c0-2.9-2.4-5.3-5.3-5.3H27.7zm234.1 109.5h-114c-6.2 0-11.2-5-11.2-11.2 0-6.2 5-11.2 11.2-11.2h114c6.2 0 11.2 5 11.2 11.2 0 6.2-5 11.2-11.2 11.2z"></path></svg>
+                        </div>
+                        <div class="ot-icon-box__content" style="margin: 10px 0px">
+                            <h4 class="icon-box-title">3. Hire</h4>				
+                            <div class="icon-box-des">You hire the best candidates, from our vetted talent pool</div>							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team area end here -->
+
+        <section class="about-two-area pt-30">
+            <div class="about-two__shape">
+              <img src="assets/images/shape/about-two-shape.png" alt="shape" />
+            </div>
+            <div class="container">
+              <div class="row g-4">
+                <div class="col-xl-6">
+                    <div class="section-header mb-40">
+                    <h5 class="wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                      <img class="me-1" src="assets/images/icon/section-title.png" alt="icon" />
+                      What makes YGN Solution LLC Best place to find candidates
+                    </h5>
+                      <p
+                        class="wow fadeInUp"
+                        data-wow-delay="400ms"
+                        data-wow-duration="1500ms"
+                      >
+                      Many organizations must make a difficult personal decision regarding the use of recruitment process outsourcing. Organizations must be sensitive and feel-focused when making hiring decisions since both personality fit and skill level are important factors in placing the appropriate individual in the right job. Therefore, we are aware that entrusting your recruiting to someone outside of your office might be a difficult decision, but we assure you that the investment will be worthwhile.
+                      </p>
+                    </div>
+                    <div
+                      class="about-two__right-item wow fadeInDown"
+                      data-wow-delay="200ms"
+                      data-wow-duration="1500ms"
+                    >
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i>Enhance Candidates
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i> Scale, as required
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <i class="fa-solid fa-check"></i> Advance Your DEI Goals
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-check"></i> Hire Faster, Better
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                <div
+                  class="col-xl-6 wow fadeInRight"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="about-two__left-item">
+                    <div class="dots">
+                      <img
+                        class="sway_Y__animation"
+                        src="assets/images/shape/about-two-dot.png"
+                        alt="shape"
+                      />
+                    </div>
+                    <div class="shape-halper">
+                      <img
+                        class="sway__animation"
+                        src="assets/images/shape/about-circle-helper.png"
+                        alt="shape"
+                      />
+                    </div>
+                    <div class="image big-image">
+                      <img
+                        src="assets/images/about/about-two-image1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="image sm-image">
+                      <img
+                        src="assets/images/about/about-two-image2.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+            <!-- About area end here -->
+        
+            <!-- Counter area start here -->
+        <section class="counter-area" style="margin-bottom: 100px;">
+            <div class="container">
+                <div class="counter__wrp gradient-bg">
+                    <div class="counter__shape wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <img src="assets/images/shape/counnter-bg-shape.png" alt="shape">
+                    </div>
+                    <div style="text-align: center; margin: 10px;">
+                        <h4 style="padding: 10px; color: white;">JOIN OUR COMMUNITY</h4>
+                        <h2 style="padding: 10px; color: white;">We are trusted by over 500+ clients. Join them now and grow your business.</h2>
+                    </div>
+                    <div class="counter__item wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1000ms">
+                        <img src="assets/images/icon/counter-icon1.png" alt="icon">
+                        <div class="content">
+                            <h3><span class="count">3000</span>+</h3>
+                            <p class="text-white">Candidates Hired</p>
+                        </div>
+                    </div>
+                    <div class="counter__item wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
+                        <img src="assets/images/icon/counter-icon2.png" alt="icon">
+                        <div class="content">
+                            <h3><span class="count">50</span>+</h3>
+                            <p class="text-white">Successful MNCs</p>
+                        </div>
+                    </div>
+                    <div class="counter__item wow bounceInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                        <img src="assets/images/icon/counter-icon4.png" alt="icon">
+                        <div class="content">
+                            <h3><span class="count">60</span>+</h3>
+                            <p class="text-white">Expert Recruiters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Counter area end here -->
+
+    </main>
+
+    <!-- Footer area start here -->
+    <footer class="footer-area secondary-bg">
+      <div class="footer__shape-regular-left wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+        <img src="assets/images/shape/footer-regular-left.png" alt="shape" />
+      </div>
+      <div class="footer__shape-solid-left wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+        <img class="sway_Y__animation" src="assets/images/shape/footer-solid-left.png" alt="shape" />
+      </div>
+      <div class="footer__shape-solid-right wow slideInRight" data-wow-delay="00ms" data-wow-duration="1500ms">
+        <img class="sway_Y__animation" src="assets/images/shape/footer-regular-right.png" alt="shape" />
+      </div>
+      <div class="footer__shape-regular-right wow slideInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+        <img src="assets/images/shape/footer-solid-right.png" alt="shape" />
+      </div>
+      <div class="footer__shadow-shape">
+        <img src="assets/images/shape/footer-shadow-shape.png" alt="shodow" />
+      </div>
+      <div class="container">
+        <div class="footer__wrp pt-100 pb-100">
+          <div style="
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 40px;
+              ">
+            <div class="leftside">
+              <h2 style="color: white; width: 70%">
+                Join our community by using our services and get hired today.
+              </h2>
+            </div>
+            <div class="d-none d-lg-inline-block">
+              <a class="btn-one" href="./contact.html" style="width: max-content">Try It For Free</a>
+            </div>
+          </div>
+          <div class="footer__item item-big wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <a href="index.html" class="logo mb-30">
+              <img src="assets/images/logo/logo-light.png" alt="logo" />
+            </a>
+            <!-- <p>©2025 YGN Solution LLC. All rights reserved.</p> -->
+            <div class="social-icon">
+              <a href="https://www.facebook.com/people/YGN-Technologies/61553317140249/?mibextid=qi2Omg"
+                target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/ygntechnologies/?igsh=MWh3cmNrNzN2Zmg5aA%3D%3D" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/ygn-technologies/" target="_blank"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://wa.me/+918209973826" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer__item item-big wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+            <h3 class="footer-title">Get in Touch</h3>
+            <ul class="footer-contact">
+              <li>
+                <div class="info" style="display: flex; gap: 10px;">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <a class="link-body"
+                    href="https://www.google.com/maps?ll=22.999317,72.501567&z=17&t=m&hl=en&gl=BD&mapclient=embed&q=PALLADIUM+TOWER+Makarba+Ahmedabad,+Gujarat+380015"
+                    target="_blank">
+                    B2 1307, Goyal palladium tower, near Vodafone house,
+                    Makarba, Ahmedabad, 380051
+                  </a>
+                </div>
+              </li>
+<!--               <li>
+              <div class="info" style="display: flex; gap: 10px;">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <a class="link-body"
+                  href="https://g.co/kgs/79JeyjH"
+                  target="_blank">
+                  7901 4th ST N STE 300, St. Petersburg, FL, USA, 33702
+                </a>
+              </div>
+            </li> -->
+              <li>
+                <div class="info" style="display: flex; gap: 10px; align-items: center;">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:info@ygntechnologies.com" class="link-body">info@ygntechnologies.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="info" style="display: flex; gap: 10px; align-items: center;">
+                  <i class="fa-solid fa-phone"></i>
+                  <a class="line_effect" href="tel:+14844815566"> +1 484 481 5566</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <h3 class="footer-title">Learn More</h3>
+            <ul>
+              <li>
+                <a href="recruiters.html">For Recruiters</a>
+              </li>
+              <li>
+                <a href="candidates.html">For Candidates</a>
+              </li>
+              <li>
+                <a href="about.html"> About Us</a>
+              </li>
+              <li>
+                <a href="blog.html"> Blog</a>
+              </li>
+              <li>
+                <a href="contact.html"> Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div
+              class="footer__item item-sm wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1500ms"
+            >
+              <h3 class="footer-title">Quick Link</h3>
+              <ul>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-regular fa-angles-right me-1"></i> About
+                    Gratech</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html"
+                    ><i class="fa-regular fa-angles-right me-1"></i> Our
+                    Services</a
+                  >
+                </li>
+                <li>
+                  <a href="pricing.html"
+                    ><i class="fa-regular fa-angles-right me-1"></i> Pricing
+                    Plan</a
+                  >
+                </li>
+                <li>
+                  <a href="case.html"
+                    ><i class="fa-regular fa-angles-right me-1"></i> Our
+                    Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="team.html"
+                    ><i class="fa-regular fa-angles-right me-1"></i> Our Team</a
+                  >
+                </li>
+              </ul>
+            </div> -->
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="d-flex gap-1 flex-wrap align-items-center justify-content-md-between justify-content-center">
+            <p class="wow fadeInDown" data-wow-delay="00ms" data-wow-duration="1500ms">
+              &copy; A YGN Solution LLC. Copyright 2025 all rights reserved
+              
+            </p>
+            <ul class="d-flex align-items-center gap-4 wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer area end here -->
+
+    <!-- Back to top area start here -->
+    <div class="scroll-up">
+        <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Back to top area end here -->
+
+    <!-- Jquery 3.7.0 Min Js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap min Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Mean menu Js -->
+    <script src="assets/js/meanmenu.js"></script>
+    <!-- Swiper bundle min Js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Counterup min Js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Wow min Js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Pace min Js -->
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Magnific popup min Js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Nice select min Js -->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!-- Isotope pkgd min Js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!-- Script Js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
