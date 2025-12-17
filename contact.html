@@ -396,11 +396,8 @@
                   </p>
                 </div>
                 <div class="contact__form">
-                  <form 
-                    method="post"
-                    autocomplete="off"
-                    onsubmit="sendMail(event)"
-                  >
+                  <<form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="3f22343b-5909-45ae-add8-cecf2eca6a89">
                     <div class="row">
                       <div class="col-6">
                         <label for="name">First Name*</label>
@@ -674,39 +671,6 @@
     <!-- Script Js -->
     <script src="assets/js/script.js"></script>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("Xj685a0tk9Q-tp74K"); // Need to fetch key here
-      })();
-    </script>
-    <script>
-      function sendMail(event) {
-        event.preventDefault();
-        const submitBtn = document.getElementById('sendMessage');
-        submitBtn.innerText = "Loading...";
-        const urlParams = new URLSearchParams(window.location.search);
-        const plan = urlParams.get('plan');
-        const formData = {
-          user_name: document.getElementById('firstname').value + " " + document.getElementById('lastname').value,
-          user_email: document.getElementById('email').value,
-          user_message: document.getElementById('message').value,
-          user_type: document.getElementById('type').value,
-          plan: plan
-        };
-
-        emailjs
-          .send("service_kyuu6z6", "template_pbmr0st", formData)
-          .then(function (res) {
-            submitBtn.innerText = "Your message has been sent. Thank you!";
-          })
-          .catch((error) => {
-            submitBtn.innerText = "Send message";
-          });
-      }
-  </script>
+    
   </body>
 </html>
