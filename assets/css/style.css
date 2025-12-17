@@ -2300,7 +2300,7 @@ input.main-search-input::placeholder {
 }
 @media(max-width:768px){
     .logo{
-        width:200px;
+        width:240px;
     }
 }
 .logo img {
