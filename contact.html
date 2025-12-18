@@ -396,68 +396,43 @@
                   </p>
                 </div>
                 <div class="contact__form">
-                  <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="3f22343b-5909-45ae-add8-cecf2eca6a89">
-                    <div class="row">
-                      <div class="col-6">
-                        <label for="name">First Name*</label>
-                        <input
-                          id="firstname"
-                          class="bg-transparent bor"
-                          type="text"
-                          placeholder="First Name"
-                          required
-                        />
-                      </div>
-                      <div class="col-6">
-                        <label for="name">Last Name*</label>
-                        <input
-                          id="lastname"
-                          class="bg-transparent bor"
-                          type="text"
-                          placeholder="Last Name"
-                          required
-                        />
-                      </div>
-                      <div class="col-6">
-                        <label for="email">Your Email*</label>
-                        <input
-                          class="bg-transparent bor"
-                          id="email"
-                          type="email"
-                          placeholder="Your Email"
-                          required
-                        />
-                      </div>
-                      <div class="col-6">
-                        <label for="type">Choose a option:</label>
-                        <select name="type" id="type">
-                          <option value="sales">Sales</option>
-                          <option value="marketing">Marketing</option>
-                          <option value="customer support">Customer Support</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="text-area">
-                      <label for="message">Write Message*</label>
-                      <textarea
-                        class="bg-transparent bor"
-                        id="message"
-                        placeholder="Write message"
-                        required
-                      ></textarea>
-                    </div>
-                    <div class="btn-two">
-                      <button
-                      type="submit"
-                      class="btn-one submit-btn"
-                      id="sendMessage"
-                      >
-                          Send Message
-                          <i class="fa-regular fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </form>
+                 <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="3f22343b-5909-45ae-add8-cecf2eca6a89">
+    
+    <div class="row">
+        <div class="col-6">
+            <label for="firstname">First Name*</label>
+            <input id="firstname" name="first_name" class="bg-transparent bor" type="text" placeholder="First Name" required />
+        </div>
+        <div class="col-6">
+            <label for="lastname">Last Name*</label>
+            <input id="lastname" name="last_name" class="bg-transparent bor" type="text" placeholder="Last Name" required />
+        </div>
+        <div class="col-6">
+            <label for="email">Your Email*</label>
+            <input id="email" name="email" class="bg-transparent bor" type="email" placeholder="Your Email" required />
+        </div>
+        <div class="col-6">
+            <label for="type">Choose an option:</label>
+            <select name="type" id="type">
+                <option value="sales">Sales</option>
+                <option value="marketing">Marketing</option>
+                <option value="customer support">Customer Support</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="text-area">
+        <label for="message">Write Message*</label>
+        <textarea id="message" name="message" class="bg-transparent bor" placeholder="Write message" required></textarea>
+    </div>
+
+    <div class="btn-two">
+        <button type="submit" class="btn-one submit-btn" id="sendMessage">
+            Send Message <i class="fa-regular fa-paper-plane"></i>
+        </button>
+    </div>
+</form>
                 </div>
               </div>
             </div>
