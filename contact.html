@@ -396,7 +396,7 @@
                   </p>
                 </div>
                 <div class="contact__form">
-                 <form action="https://api.web3forms.com/submit" method="POST">
+                 <form onsubmit="handleSubmit(event)">
     <input type="hidden" name="access_key" value="3f22343b-5909-45ae-add8-cecf2eca6a89">
     
     <div class="row">
@@ -646,6 +646,49 @@
     <!-- Script Js -->
     <script src="assets/js/script.js"></script>
 
+    <script>
+      async function handleSubmit(event) {
+        event.preventDefault();
+        const form = event.target;
+        const submitBtn = document.getElementById('sendMessage');
+        const originalBtnText = submitBtn.innerHTML;
     
+        // Change button state
+        submitBtn.innerText = "Sending...";
+        submitBtn.disabled = true;
+    
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        try {
+          const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
+            },
+            body: json
+          });
+    
+          const result = await response.json();
+          if (result.success) {
+            // ❤️ Success Action
+            submitBtn.innerText = "Message Sent Successfully!";
+            form.reset(); // Clears the form fields
+          } else {
+            submitBtn.innerText = "Error, try again.";
+          }
+        } catch (error) {
+          submitBtn.innerText = "Failed to send.";
+        } finally {
+          // Re-enable button after 3 seconds
+          setTimeout(() => {
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+          }, 3000);
+        }
+      }
+    </script>
   </body>
 </html>
