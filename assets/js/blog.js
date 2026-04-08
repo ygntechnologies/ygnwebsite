@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         <a href="blog.html?_id=${
                           post._id
                         }" class="blog__image d-block image">
-                            <img width="356" height="245" src=${
+                            <img width="356" height="245" src="${
                               post?.image || "assets/images/blog/blog-image1.jpg"
-                            } alt="image" style="object-fit:cover" />
+                            }" alt="image" style="object-fit:cover" />
                         </a>
                         <div class="blog__content">
                             <h3 class="bor-bottom pb-20 mb-20 primary-hover">
