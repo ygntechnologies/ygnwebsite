@@ -2,12 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const postId = urlParams.get("_id");
 
-  // Check if postId exists
-//   if (!postId) {
-//     console.error("Error: No postId provided in the URL");
-//     return;
-//   }
-
   // Construct the URL for fetching the specific blog post
   if (postId) {
     const fetchUrl = `https://ygn-technologies-backend.vercel.app/get-blog-details?_id=${postId}`;
@@ -19,15 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check if data is an object
         if (typeof data.data === "object") {
           const post = data.data;
+
+          // Check localStorage for image first, fall back to backend image
+          const localImage = localStorage.getItem(`blog_image_${post._id}`);
+          const imageUrl = localImage || post?.image || "assets/images/blog/blog-image1.jpg";
+
           blogPosts.innerHTML += `
             <div class="container pt-120">
             <div class="row g-4">
               <div class="col-lg-12 order-2 order-lg-1">
                 <div class="blog__item blog-single__left-item shadow-none">
                   <div class="entry-media hover-scale">   
-                    <img width="960" height="600" src="${
-                      post?.image || "assets/images/blog/blog-image1.jpg"
-                    }" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" sizes="(max-width: 960px) 100vw, 960px">                
+                    <img width="960" height="600" src="${imageUrl}" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" sizes="(max-width: 960px) 100vw, 960px">                
                   </div>
                   <div class="blog__content p-0">
                     <ul
@@ -102,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        // Handle error
         document.getElementById("blog-posts").innerHTML =
           "Error fetching data. Please try again later.";
       });
@@ -135,7 +131,10 @@ document.addEventListener("DOMContentLoaded", function () {
         `
         if (Array.isArray(data.data)) {
           data.data.forEach((post) => {
-            // Corrected: data.data.forEach
+            // Check localStorage for image first, fall back to backend image
+            const localImage = localStorage.getItem(`blog_image_${post._id}`);
+            const imageUrl = localImage || post?.image || "assets/images/blog/blog-image1.jpg";
+
             blogPosts.innerHTML += `
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="
                             visibility: visible;
@@ -147,9 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <a href="blog.html?_id=${
                                   post._id
                                 }" class="blog__image d-block image">
-                                    <img width="356" height="245" src="${
-                                      post?.image || "assets/images/blog/blog-image1.jpg"
-                                    }" alt="image" style="object-fit:cover"/>
+                                    <img width="356" height="245" src="${imageUrl}" alt="image" style="object-fit:cover"/>
                                 </a>
                                 <div class="blog__content">
                                     <h3 class="bor-bottom pb-20 mb-20 primary-hover">
@@ -171,7 +168,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         `;
           });
         } else {
-          // Handle error or unexpected response
           blogPosts.innerHTML = "Error: Invalid response from server";
         }
       });
