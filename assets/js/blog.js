@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // Check if data is an array
       if (Array.isArray(data.data)) {
         data.data.forEach((post) => {
-          // Corrected: data.data.forEach
+          // Check localStorage for image first, fall back to backend image
+          const localImage = localStorage.getItem(`blog_image_${post._id}`);
+          const imageUrl = localImage || post?.image || "assets/images/blog/blog-image1.jpg";
+
           blogPosts.innerHTML += `
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms" style="
                     visibility: visible;
@@ -19,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <a href="blog.html?_id=${
                           post._id
                         }" class="blog__image d-block image">
-                            <img width="356" height="245" src="${
-                              post?.image || "assets/images/blog/blog-image1.jpg"
-                            }" alt="image" style="object-fit:cover" />
+                            <img width="356" height="245" src="${imageUrl}" alt="image" style="object-fit:cover" />
                         </a>
                         <div class="blog__content">
                             <h3 class="bor-bottom pb-20 mb-20 primary-hover">
