@@ -5,6 +5,56 @@ document.addEventListener("DOMContentLoaded", function () {
   function getImageUrl(post) {
     const localImage = localStorage.getItem(`blog_image_${post._id}`);
 
+    // Custom image for Jack
+    if (post.name && post.name.toLowerCase() === 'jack') {
+      return 'assets/images/blog/jack.jpg';
+    }
+
+    // Custom image for Ellen McGurk
+    if (post.name && post.name.toLowerCase().includes('ellen')) {
+      return 'assets/images/blog/ellen.jpg';
+    }
+
+    // Custom image for Nandini Tarigopula
+    if (post.name && post.name.toLowerCase().includes('nandini')) {
+      return 'assets/images/blog/nandini.jpg';
+    }
+
+    // Custom image for Saikumar Musirigari
+    if (post.name && post.name.toLowerCase().includes('saikumar')) {
+      return 'assets/images/blog/saikumar.jpg';
+    }
+
+    // Custom image for Jasmine Shaik
+    if (post.name && post.name.toLowerCase().includes('jasmine')) {
+      return 'assets/images/blog/jasmine.jpg';
+    }
+
+    // Custom image for Dainel Boholo
+    if (post.name && post.name.toLowerCase().includes('dainel')) {
+      return 'assets/images/blog/dainel.jpg';
+    }
+
+    // Custom image for Naveen Amara
+    if (post.name && post.name.toLowerCase().includes('amara')) {
+      return 'assets/images/blog/naveen_amara.jpg';
+    }
+
+    // Custom image for Alingnue Abonge
+    if (post.name && post.name.toLowerCase().includes('abonge')) {
+      return 'assets/images/blog/alingnue.jpg';
+    }
+
+    // Custom image for Augustine Nkwah
+    if (post.name && post.name.toLowerCase().includes('augustine')) {
+      return 'assets/images/blog/augustine.jpg';
+    }
+
+    // Custom image for Suresh Akula
+    if (post.name && post.name.toLowerCase().includes('suresh')) {
+      return 'assets/images/blog/suresh.jpg';
+    }
+
     // If backend sends full URL or base64 → use it
     if (post.image && (post.image.startsWith("http") || post.image.startsWith("data:image"))) {
       return post.image;
@@ -15,11 +65,14 @@ document.addEventListener("DOMContentLoaded", function () {
       return `assets/images/blog/${post.image}`;
     }
 
-    // fallback priority
-    return (
-      localImage ||
-      "assets/images/blog/blog-image1.jpg"
-    );
+    if (localImage && (localImage.startsWith("http") || localImage.startsWith("data:image") || localImage.startsWith("assets/"))) {
+      return localImage;
+    }
+
+    // Determine fallback image based on post ID so they are all different
+    const idHash = post._id ? parseInt(post._id.slice(-6), 16) : 0;
+    const fallbackNum = isNaN(idHash) ? 1 : (idHash % 6) + 1;
+    return `assets/images/blog/blog-image${fallbackNum}.jpg`;
   }
 
   if (postId) {
